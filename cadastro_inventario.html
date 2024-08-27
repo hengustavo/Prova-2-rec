@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro fluxo de caixa</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Menu</a></li>
+                <li><a href="listar_inventario.php">Listar inventário</a></li>
+        </nav>
+    </div>
+    <form action="cadastro_inventario.php" method="post">
+            <div>
+                <label for="codigo_patrimonio">Código patrimonio</label>
+                <input type="text" name="codigo_patrimonio" id="codigo_patrimonio">
+            </div>
+            <br>
+            <div>
+                <label for="descricao">Descrição</label>
+                <input type="text" name="descricao" id="descricao">
+            </div>
+            <br>
+            <div>
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca">
+            </div>
+            <br>
+            <div>
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo" id="modelo">
+            </div>
+            <br>
+            <div>
+                <label for="armazenamento">Armazenamento</label>
+                <input type="number" name="armazenamento" id="armazenamento">
+            </div>
+            <br>
+            <div>
+                <label for="memoria">Memória</label>
+                <input type="number" name="memoria" id="memoria">
+            </div>
+            <br>
+            <div>
+                <label for="processador">Processador</label>
+                <input type="text" name="processador" id="processador">
+            </div>
+            <br>
+            <div>
+                <label for="possui_placa_video">Possui placa de vídeo</label>
+                <label>Possui placa de vídeo:</label>
+                <input type="radio" name="possui_placa_video" id="possui_placa_videoSim" value="1" class="inline" /><label id="possui_placa_videoSim">Sim</label>
+                <input type="radio" name="possui_placa_video" id="possui_placa_videoNao" value="0" class="inline" /><label id="possui_placa_videoNao">Não</label>
+            </div>
+            <br>
+            <div>
+                <label for="placa_video">Placa vídeo</label>
+                <input type="text" name="placa_video" id="placa_video">
+            </div>
+            <br>
+            <div>
+                <label for="sistema_operacional">Sistema operacional</label>
+                <input type="text" name="sistema_operacional" id="sistema_operacional">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+    </form>
+</body>
+</html>
